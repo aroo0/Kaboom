@@ -591,6 +591,8 @@ video {
     justify-content: center;
   }
 
+  
+
   @media only screen and (max-width: 812px) {
 
     .video-wrapper.values {
@@ -598,7 +600,22 @@ video {
 
     }
   }
+  
+  @media only screen and (max-width: 400px) {
 
+    .video-wrapper.values {
+    height: 140vh;
+
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+
+    .video-wrapper {
+    height: 80vh;
+
+    }
+  }
 
 
   .video-text{
@@ -665,7 +682,7 @@ video {
 }
 
 .info {
-    margin: 0 3rem 3rem ;
+    margin: 0 3rem 1rem 3rem ;
     position: relative;
 }
 
@@ -802,6 +819,15 @@ button.learn-more:hover {
     font-size: 4rem;
     transform: rotate(-1deg);
 }
+
+
+@media only screen and (max-width: 700px) {
+
+    .workshops h3 {
+    font-size: 3rem;
+
+    }
+  }
 
 .btn.black-font {
     font-weight: 700;
