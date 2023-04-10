@@ -59,11 +59,11 @@ p {
     align-items: center;
 }
 
-.logo h1 {
+.logo {
     font-family: 'Permanent Marker';
     /* font-style: italic; */
     font-weight: 300;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     margin: .2rem;
     transform: rotate(-1deg);
 }
@@ -273,7 +273,7 @@ header .container {
 }
 
 
-.banner h4 {
+.banner-category {
     justify-self: flex-start;
     font-weight: 400;
     margin:0 3rem;
