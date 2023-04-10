@@ -119,17 +119,14 @@ header .container {
 
 
 
-
-.sticky {
-    position: sticky;
-    top: 4.35rem;
-    z-index: 3;
-}
-
 .main-nav {
     border-bottom: 3px solid #000;
     /* border-top: 3px solid #000; */
     background-color: white;
+    position: sticky;
+    top: 4.35rem;
+    z-index: 3;
+    
 
 
 
@@ -159,37 +156,35 @@ header .container {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
-}
-
-.main-nav li  {
-    height: 100%;
     padding: 1rem 3rem;
-    border-right: 3px solid #000;
-    cursor: pointer;
-    transition: background-color .2s;
 
 
 }
 
 
-.main-nav li:hover {
-    background-color: #EEB5FF;
-}
-.main-nav li::after {
-    border-left: 3px solid #000;
-}
-
-.main-nav li:nth-child(1) {
-    border-left: 3px solid #000;
-}
-
-
-.main-nav a:link,.main-nav a:visited {
-    color: #000;
+.main-nav li a {
+    
+    color: black;
+    padding: 1rem 3rem;
     font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
+    box-sizing: border-box;
+    border-right: 3px solid #000;
+
+}
+
+.main-nav li:first-child a {
+    border-left: 3px solid #000;
+}
+
+
+.main-nav li a:hover {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: black;
 
 }
 .animmated-panel {
@@ -549,10 +544,12 @@ a:link, a:visited {
     position: sticky;
     top: 4.35rem;
     z-index: 3;
-
-
-
+    box-sizing: border-box;
+    height: 4rem;
 }
+
+
+
 
 .section-2 .text {
     margin: 2rem 3rem;
