@@ -470,6 +470,7 @@ a:link, a:visited {
     flex:3;
     display: flex;
     flex-direction: column;
+    padding: clamp(1.5rem, 3vw, 3rem)
 
 }
 
@@ -518,16 +519,12 @@ a:link, a:visited {
 }
 .section-1 h3 {
     font-size: 2rem;
-    margin: 4rem 2rem;
+    margin: 4rem clamp(1.5rem, 3vw, 3rem);
     font-weight: 400;
     color: #FAEAFF
 }
 
 
-
-.photo-container {
-    margin: 3rem 3rem 0rem;
-}
 
 
 .photo-container img {
@@ -551,7 +548,6 @@ a:link, a:visited {
 
 
 .section-2 .text {
-    margin: 2rem 3rem;
     font-size: 1.4rem;
 }
 
@@ -581,7 +577,8 @@ video {
   .video-wrapper {
     background-color: #000;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem 0;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -591,30 +588,6 @@ video {
   }
 
   
-
-  @media only screen and (max-width: 812px) {
-
-    .video-wrapper.values {
-    height: 160vh;
-
-    }
-  }
-  
-  @media only screen and (max-width: 400px) {
-
-    .video-wrapper.values {
-    height: 140vh;
-
-    }
-  }
-  
-  @media only screen and (max-width: 450px) {
-
-    .video-wrapper {
-    height: 80vh;
-
-    }
-  }
 
 
   .video-text{
@@ -677,24 +650,19 @@ video {
 
 .person .photo {
     width: auto;
-    margin: 3rem 3rem 1rem;
+    margin: 3rem 2rem 1rem;
 }
 
 .info {
-    margin: 0 3rem 1rem 3rem ;
+    margin: 0 clamp(2rem, 2vh, 3rem) 1rem;
     position: relative;
 }
 
 
-@media only screen and (max-width: 1000px) {
-    .info {
-        width: 80%;
-    }
-}
 
 
 .photo img {
-    width: 90%;
+    width: 100%;
     max-height: 30rem;
     object-fit: cover;
     margin: 0 auto;
@@ -739,7 +707,7 @@ video {
     position: absolute;
     transform: rotate(-2deg);
     top: -5rem;
-    left: -1rem;
+    left: .8rem;
 
 
 
@@ -747,7 +715,7 @@ video {
 
 #alex {
     top: -8rem;
-    left:-0.5rem;
+    left: -0.5rem;
 }
 
 button.tag {
@@ -836,7 +804,6 @@ button.learn-more:hover {
 
 .video-text .wrapper {
     max-width: 50rem;
-    margin: 0 2rem
 }
 
 
@@ -887,18 +854,12 @@ button.learn-more:hover {
 }
 
 
-@media only screen and (max-width:730px) {
-    .page .content {
-        margin: 3rem 1rem;
-        
-    }
 
-}
+
 
 
 .page .class  {
-    padding: 1rem 2rem 1rem 2rem;
-
+    padding: clamp(1.5rem, 3vw, 3rem);
 }
 .content .class {
     text-align: center;
@@ -925,7 +886,7 @@ button.learn-more:hover {
 .pricing .content {
     flex: 2 1 20rem;
     align-items:flex-start;
-    margin: 0 5rem;
+    padding: clamp(1.5rem, 3vw, 3rem);
 
 }
 
@@ -955,10 +916,6 @@ button.learn-more:hover {
         display: none;
     }
 
-    .pricing .content {
-        margin: 3rem 2rem;
-    }
-    
     
 
 }
@@ -986,7 +943,7 @@ p.small {
 .workshops .container, 
 .container-right,
 .container-left {
-    padding: 3rem 3rem 4rem 3rem;
+    padding: clamp(1.5rem, 3vw, 3rem);
 
 }
 
@@ -999,7 +956,6 @@ p.small {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     color:#fff;
     flex: 1 1 30rem;
-    padding: 3rem 3rem 4rem 3rem;
 }
 
 .ballet h4, .workshops h4 {
@@ -1210,11 +1166,11 @@ footer p {
     border-radius: 5px 0 0 5px;
     color: #0F121F;
     padding: 0.5rem 1.5rem;
-     border: none;
+    border: none;
     box-sizing: border-box;
     flex: 1 1 20rem;
     font-family: 'Mulish', sans-serif;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     height: 4rem;
 }
 
